@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </mutableArray>
+        <mutableArray key="Kefa-Regular.otf">
+            <string>KefaIIPro-Regular</string>
+            <string>KefaIIPro-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="E4u-WC-Cgh" customClass="settingsCell" customModule="PrayerBook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E4u-WC-Cgh" id="Yyd-0e-064">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsD-2W-8Rw">
+                        <rect key="frame" x="59" y="13" width="202" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="XHx-yt-u0d"/>
+                            <constraint firstAttribute="width" constant="202" id="rvd-ml-qsa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="KefaIIPro-Regular" family="Kefa II Pro" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mj-tU-EMA">
+                        <rect key="frame" x="59" y="31" width="153" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="153" id="8OL-2Y-qaQ"/>
+                            <constraint firstAttribute="height" constant="21" id="YhG-cE-hJi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="KefaIIPro-Regular" family="Kefa II Pro" pointSize="16"/>
+                        <color key="textColor" white="0.53998921889999996" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xd-4X-lIK" customClass="CustomButtonWithValue" customModule="PrayerBook" customModuleProvider="target">
+                        <rect key="frame" x="8" y="13" width="40" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.20530055250000001" blue="0.18012722219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="C1g-wk-GoO"/>
+                            <constraint firstAttribute="width" constant="40" id="RrV-E5-dxA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="35"/>
+                        <state key="normal" title="&gt;">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WQx-8n-lNU">
+                        <rect key="frame" x="220" y="18" width="94" height="29"/>
+                        <connections>
+                            <action selector="onStep:" destination="E4u-WC-Cgh" eventType="valueChanged" id="TXD-Ze-QxS"/>
+                        </connections>
+                    </stepper>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jsD-2W-8Rw" firstAttribute="leading" secondItem="8Xd-4X-lIK" secondAttribute="trailing" constant="11" id="00U-5A-lCQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WQx-8n-lNU" secondAttribute="trailing" constant="-2" id="0Pe-kL-Jf5"/>
+                    <constraint firstAttribute="centerY" secondItem="8Xd-4X-lIK" secondAttribute="centerY" constant="-3.5" id="Ef4-cy-H3x"/>
+                    <constraint firstItem="2Mj-tU-EMA" firstAttribute="leading" secondItem="8Xd-4X-lIK" secondAttribute="trailing" constant="11" id="NHa-2D-9y3"/>
+                    <constraint firstAttribute="centerY" secondItem="WQx-8n-lNU" secondAttribute="centerY" constant="-3" id="nyd-hJ-e0Z"/>
+                    <constraint firstItem="8Xd-4X-lIK" firstAttribute="leading" secondItem="Yyd-0e-064" secondAttribute="leadingMargin" id="qXK-CE-LWf"/>
+                    <constraint firstItem="jsD-2W-8Rw" firstAttribute="top" secondItem="8Xd-4X-lIK" secondAttribute="top" id="vhv-NO-t5r"/>
+                    <constraint firstItem="2Mj-tU-EMA" firstAttribute="bottom" secondItem="8Xd-4X-lIK" secondAttribute="bottom" constant="-1" id="wRn-uo-zpA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnPlay" destination="8Xd-4X-lIK" id="Amm-Xy-uvK"/>
+                <outlet property="label" destination="jsD-2W-8Rw" id="IhQ-SY-mI4"/>
+                <outlet property="stepper" destination="WQx-8n-lNU" id="3sI-pS-lvy"/>
+                <outlet property="value" destination="2Mj-tU-EMA" id="JNY-mu-QQy"/>
+            </connections>
+            <point key="canvasLocation" x="373" y="299"/>
+        </tableViewCell>
+    </objects>
+</document>

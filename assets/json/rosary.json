@@ -1,0 +1,67 @@
+[
+ {
+ "title": "The Apostle's Creed",
+ "content": "I BELIEVE IN GOD, the Father almighty, Creator of Heaven and earth. \nAnd in Jesus Christ, His only Son, our Lord, \nWho was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate; was crucified, died, and was buried. \nHe descended to the Dead. \n\nThe third day He rose again from the dead. \nHe ascended into Heaven, and sits at the right hand of God, the Father almighty. \nHe shall come again to judge the living and the dead. \n\nI believe in the Holy Spirit, the holy Catholic Church, \nthe communion of saints, the forgiveness of sins, \nthe resurrection of the body, and life everlasting. \n\nAmen.",
+ "mp3":"creed",
+ "delay": 10
+ },
+ {
+ "title": "Our Father",
+ "content": "OUR FATHER, Who art in Heaven, hallowed be Thy Name. \nThy kingdom come, Thy will be done on earth as it is in Heaven.\nGive us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. \nAnd lead us not into temptation, \nbut deliver us from evil. \n\nAmen.",
+  "mp3":"ourfather",
+  "delay": 10
+ },
+ {
+ "title": "Hail Mary",
+ "content": "HAIL MARY, full of grace, the Lord is with thee. Blessed art thou among women,\nand blessed is the fruit of thy womb, Jesus.\n\nHoly Mary, Mother of God, pray for us\nsinners, now and at the hour of our death. \n\nAmen.",
+  "mp3":"hailmary",
+  "delay": 5
+ },
+ {
+ "title": "Glory Be",
+ "content": "GLORY BE to the Father, and to the Son, and to the Holy Spirit. \nAs it was in the beginning is now, and ever shall be, world without end.\n\nAmen.",
+  "mp3":"glorybe",
+  "delay": 4
+ },
+ {
+ "title": "Fatima Prayer",
+ "content": "O MY JESUS, forgive us our sins, save us\nfrom the fires of Hell; lead all souls to\nHeaven, especially those in most need of Thy mercy. \n\nAmen.",
+  "mp3":"fatima",
+  "delay": 0
+ },
+ {
+ "title": "Hail Holy Queen",
+ "content": "HAIL HOLY QUEEN, mother of mercy; our life, our sweetness, and our hope. \nTo thee do we cry, poor banished children of Eve. \nTo thee do we send up our sighs, mourning and weeping in this vale of tears. \nTurn, then, most gracious advocate, thine eyes of mercy toward us.\nAnd after this, our exile, show unto us the blessed fruit of thy womb, Jesus. \n\nO clement, O loving, O sweet Virgin Mary.",
+  "mp3":"hailholyqueen",
+   "delay": 0
+ },
+ {
+ "title": "Let us pray",
+ "content": "O GOD, WHOSE only-begotten Son by His life, death and resurrection, \nhas purchased for us the rewards of eternal life; \ngrant, we beseech Thee, that by meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, \nwe may imitate what they contain and obtain what they promise, \nthrough the same Christ our Lord. \n\nAmen. \n\n May the Divine assistance remain always with us and may all the souls of the faithful departed through the mercy of God rest in peace. \n\nAmen.",
+  "mp3":"ending",
+   "delay": 0
+ },
+ {
+ "title": "Sign of the Cross",
+ "content": "In the Name of the Father ,And of The Son and of The Holy Spirit \n\nAmen.",
+  "mp3":"signofthecross",
+   "delay": 0
+ },
+ {
+ "title": "Pray For Us",
+ "content": "Pray for us Oh Holy Mother of God\n\n That we may be made worthy of the promises of Christ. \n\n Amen",
+ "mp3":"prayforus",
+   "delay": 3
+ },
+ {
+ "title": "",
+ "content": "For the Popes intentions.",
+ "mp3":"popeintro",
+   "delay": 0
+ },{
+    "title":"The Most Holy Rosary",
+ "content":"There is no problem, I tell you, no matter how difficult it is, that we cannot resolve by the prayer of the Holy Rosary\n\n\n - Sister Lucia, Fatima seer 1917",
+ "mp3":"intro",
+   "delay": 0
+ }
+ ]

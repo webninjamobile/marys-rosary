@@ -1,0 +1,21 @@
+PODS:
+  - Crashlytics (3.1.1)
+  - Fabric (1.4.0):
+    - Fabric/Base (= 1.4.0)
+  - Fabric/Base (1.4.0)
+  - JGMethodSwizzler (2.0.1)
+  - MZAppearance (1.1.5)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - JGMethodSwizzler
+  - MZAppearance
+
+SPEC CHECKSUMS:
+  Crashlytics: 39ab395565bc03c29cdecd2b9d103ebf30930c10
+  Fabric: 6d1d1c1eaf7ebc76fc3307e2c0259456411baf26
+  JGMethodSwizzler: e0ea5c1c6c55304ec4ef3f54e441400c6735c899
+  MZAppearance: 6e9dc64e42074c0a19812a327f590746c3283bab
+
+COCOAPODS: 0.36.0
