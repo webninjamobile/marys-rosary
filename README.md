@@ -7,11 +7,12 @@
 
 ##Screenshots
 
-[[/appstore_assets/screenshots/1.png|width=150px]]
-![image](https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/2.png =150x)
-![image](https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/3.png =150x)
-![image](https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/4.png =150x)
-![image](https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/5.png =150x)
+
+<img src="https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/1.png" width="150">
+<img src="https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/2.png" width="150">
+<img src="https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/3.png" width="150">
+<img src="https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/4.png" width="150">
+<img src="https://raw.githubusercontent.com/webninjamobile/marys-rosary/master/appstore_assets/screenshots/5.png" width="150">
 
 **Optimised for iOS8!
 **
