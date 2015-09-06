@@ -28,3 +28,8 @@ The most beautiful rosary app with real human audio and background music special
 
 This app is best with the use of headphones/earphones and for meditation.
 
+### Credits
+
+Audio by : http://therosary.net/
+
+
