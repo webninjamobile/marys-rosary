@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		530CD5C21B70D22500F13A79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530CD5C11B70D22500F13A79 /* AppDelegate.swift */; };
 		530CD5C41B70D22500F13A79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530CD5C31B70D22500F13A79 /* ViewController.swift */; };
-		530CD5C71B70D22500F13A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530CD5C51B70D22500F13A79 /* Main.storyboard */; };
 		530CD5C91B70D22500F13A79 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 530CD5C81B70D22500F13A79 /* Images.xcassets */; };
-		530CD5CC1B70D22500F13A79 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530CD5CA1B70D22500F13A79 /* LaunchScreen.xib */; };
 		530CD5D81B70D22500F13A79 /* PrayerBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530CD5D71B70D22500F13A79 /* PrayerBookTests.swift */; };
 		53259E2F1B80E82D00175F0D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53259E2E1B80E82D00175F0D /* SplashViewController.swift */; };
 		532BA9AB1B8EF83D00B032E7 /* Custom+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532BA9AA1B8EF83D00B032E7 /* Custom+UIButton.swift */; };
@@ -62,6 +59,8 @@
 		53990B041B7F112B00E42331 /* space.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 53990B031B7F112B00E42331 /* space.mp3 */; };
 		53990B061B7F4FAD00E42331 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53990B051B7F4FAD00E42331 /* Audio.swift */; };
 		53990B0A1B7F88EE00E42331 /* FileExtenstions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53990B091B7F88EE00E42331 /* FileExtenstions+String.swift */; };
+		53A7F6121BA80AFC000AC47A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A7F6111BA80AFC000AC47A /* AppDelegate.swift */; };
+		53A7F6131BA80B9D000AC47A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530CD5C51B70D22500F13A79 /* Main.storyboard */; };
 		53D440381B7B72B400C64184 /* PrayerSingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D440371B7B72B400C64184 /* PrayerSingleViewController.swift */; };
 		53D63B4B1B7C40840012E050 /* CircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D63B4A1B7C40840012E050 /* CircleProgress.swift */; };
 		EB18B5E3A7A4F8D22B3434F1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4BDC23FCAF0E9F061CF8C0 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -80,7 +79,6 @@
 /* Begin PBXFileReference section */
 		530CD5BC1B70D22500F13A79 /* PrayerBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		530CD5C01B70D22500F13A79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		530CD5C11B70D22500F13A79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PrayerBook/AppDelegate.swift; sourceTree = "<group>"; };
 		530CD5C31B70D22500F13A79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		530CD5C61B70D22500F13A79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		530CD5C81B70D22500F13A79 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -145,6 +143,7 @@
 		53990B031B7F112B00E42331 /* space.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = space.mp3; sourceTree = "<group>"; };
 		53990B051B7F4FAD00E42331 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		53990B091B7F88EE00E42331 /* FileExtenstions+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileExtenstions+String.swift"; sourceTree = "<group>"; };
+		53A7F6111BA80AFC000AC47A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53D440371B7B72B400C64184 /* PrayerSingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerSingleViewController.swift; sourceTree = "<group>"; };
 		53D63B4A1B7C40840012E050 /* CircleProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgress.swift; sourceTree = "<group>"; };
 		5B4BDC23FCAF0E9F061CF8C0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +173,7 @@
 		530CD5B31B70D22500F13A79 = {
 			isa = PBXGroup;
 			children = (
+				53A7F6111BA80AFC000AC47A /* AppDelegate.swift */,
 				B73AEB54EE4029E44A1257BF /* Frameworks */,
 				535A78D91B8E15F300D35597 /* MZFormSheetPresentationController */,
 				8F2F729CA28C402A62704946 /* Pods */,
@@ -184,7 +184,6 @@
 				535183E61B8CD49800EBDF52 /* cells */,
 				53D440361B7B63CC00C64184 /* controllers */,
 				535702C41B7AF45E009965E4 /* libs */,
-				530CD5C11B70D22500F13A79 /* AppDelegate.swift */,
 				530CD5C51B70D22500F13A79 /* Main.storyboard */,
 				535A78D61B8E145E00D35597 /* PrayerBook-Bridging-Header.h */,
 			);
@@ -451,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A7F6131BA80B9D000AC47A /* Main.storyboard in Resources */,
 				53990AF81B7E08E300E42331 /* creed.mp3 in Resources */,
 				53990ADD1B7CEB8500E42331 /* mysteries.json in Resources */,
 				53990AF41B7E08E300E42331 /* 2ndmystery.mp3 in Resources */,
@@ -472,8 +472,6 @@
 				53990B011B7E08E300E42331 /* prayforus.mp3 in Resources */,
 				53990AD71B7C9E4C00E42331 /* rosary.json in Resources */,
 				5357B5EE1B7110AB00F2BC5B /* KaushanScript-Regular.ttf in Resources */,
-				530CD5C71B70D22500F13A79 /* Main.storyboard in Resources */,
-				530CD5CC1B70D22500F13A79 /* LaunchScreen.xib in Resources */,
 				53990AF91B7E08E300E42331 /* ending.mp3 in Resources */,
 				53990AFB1B7E08E300E42331 /* glorybe.mp3 in Resources */,
 				53990B001B7E08E300E42331 /* popeintro.mp3 in Resources */,
@@ -561,6 +559,7 @@
 				539662B81B71C3CC002DA620 /* Mysteries.swift in Sources */,
 				539662BA1B71C7FE002DA620 /* Hex+UIColor.swift in Sources */,
 				53259E2F1B80E82D00175F0D /* SplashViewController.swift in Sources */,
+				53A7F6121BA80AFC000AC47A /* AppDelegate.swift in Sources */,
 				53990AD91B7CA5C100E42331 /* SwiftyJSON.swift in Sources */,
 				535183E51B8CC9A800EBDF52 /* SettingsViewController.swift in Sources */,
 				535A78EC1B8E15F300D35597 /* UIViewController+TargetViewController.m in Sources */,
@@ -580,7 +579,6 @@
 				535A78E71B8E15F300D35597 /* MZBlurEffectAdapter.m in Sources */,
 				535A78EB1B8E15F300D35597 /* MZTransition.m in Sources */,
 				5357B5E91B71053800F2BC5B /* NavViewController.swift in Sources */,
-				530CD5C21B70D22500F13A79 /* AppDelegate.swift in Sources */,
 				535A78E81B8E15F300D35597 /* MZFormSheetPresentationController.m in Sources */,
 				53990B0A1B7F88EE00E42331 /* FileExtenstions+String.swift in Sources */,
 				5357B5F41B71C25500F2BC5B /* WeekDate+NSDate.swift in Sources */,
@@ -733,6 +731,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PrayerBook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Release;
 		};
