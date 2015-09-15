@@ -14,12 +14,10 @@ class ViewController: UIViewController, UITableViewDataSource{
     @IBOutlet weak var tableView: UITableView!
     var currentIndex : Int = 0;
     
-    let mysteries = [
-        ("Joyful Mysteries","Mondays, Saturdays, Sundays of Advent, and Sundays from Epiphany until Lent","joyful","#8f0f0f"),
-        ("Luminous Mysteries","Every Thursday","luminous","#6f6e41"),
-        ("Sorrowful Mysteries","Tuesdays, Fridays, and daily from Ash Wednesday until Easter Sunday","sorrowful","#0f0f12"),        
-        ("Glorious Mysteries","Every Wednesdays, and Sundays","glorious","#cc6a0b"),
-    ]
+    var mysteries : [(String,String,String,String)] = []
+     var mysteryIndex = [2,0,1,2,3,0,1]
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,17 +33,40 @@ class ViewController: UIViewController, UITableViewDataSource{
 
         self.navigationItem.rightBarButtonItem = logButton
         
+        let leftButton : UIBarButtonItem = UIBarButtonItem(title: "\u{f004}", style: UIBarButtonItemStyle.Plain, target: self, action: "gotoCredits:")
+        leftButton.setTitleTextAttributes([
+            NSFontAttributeName : UIFont(name: "FontAwesome", size: 22)!,
+            NSForegroundColorAttributeName : UIColor.whiteColor()],
+            forState: UIControlState.Normal)
+        self.navigationItem.leftBarButtonItem = leftButton
+        
         //self.parentViewController.view.backgroundColor = UIColor.redColor();
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector:"updateMystery", name:
             UIApplicationWillEnterForegroundNotification, object: nil)
-        
+        updateRow()
+    }
+    
+    
+    func updateRow(){
+        let dat = NSDate().toWeekDay();
+        let mysteries = [
+            ("Joyful Mysteries","Mondays, Saturdays, Sundays of Advent, and Sundays from Epiphany until Lent","joyful","#8f0f0f"),
+            ("Sorrowful Mysteries","Tuesdays, Fridays, and daily from Ash Wednesday until Easter Sunday","sorrowful","#0f0f12"),
+            ("Glorious Mysteries","Every Wednesdays, and Sundays","glorious","#cc6a0b"),
+            ("Luminous Mysteries","Every Thursday","luminous","#6f6e41"),
+        ]
+        self.mysteries = mysteries
+        self.mysteries.removeAtIndex(mysteryIndex[dat])
+        self.mysteries.insert(mysteries[mysteryIndex[dat]],atIndex:0)
     }
     
     func updateMystery(){
         let dat = NSDate().toWeekDay();
         
         todaysMystery.text = Mysteries().getMystery(dat) + " Mysteries";
+        updateRow()
+
     }
     
     deinit{
@@ -54,6 +75,10 @@ class ViewController: UIViewController, UITableViewDataSource{
     
     func gotoSettings(sender: AnyObject){
         self.performSegueWithIdentifier("settings", sender: sender)
+    }
+    
+    func gotoCredits(sender: AnyObject){
+        self.performSegueWithIdentifier("credits", sender: sender)
     }
     
     

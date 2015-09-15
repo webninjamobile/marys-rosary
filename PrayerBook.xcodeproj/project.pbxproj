@@ -31,6 +31,7 @@
 		535A78EB1B8E15F300D35597 /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A78E41B8E15F300D35597 /* MZTransition.m */; };
 		535A78EC1B8E15F300D35597 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A78E61B8E15F300D35597 /* UIViewController+TargetViewController.m */; };
 		535A78EE1B8EC01C00D35597 /* ModalPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535A78ED1B8EC01C00D35597 /* ModalPreviewViewController.swift */; };
+		53953A581BA83601004E5DD5 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53953A571BA83601004E5DD5 /* CreditsViewController.swift */; };
 		539662B81B71C3CC002DA620 /* Mysteries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539662B71B71C3CC002DA620 /* Mysteries.swift */; };
 		539662BA1B71C7FE002DA620 /* Hex+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539662B91B71C7FE002DA620 /* Hex+UIColor.swift */; };
 		53990AD41B7C933B00E42331 /* Kefa-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53990AD31B7C92A000E42331 /* Kefa-Regular.otf */; };
@@ -115,6 +116,7 @@
 		535A78E51B8E15F300D35597 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
 		535A78E61B8E15F300D35597 /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
 		535A78ED1B8EC01C00D35597 /* ModalPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPreviewViewController.swift; sourceTree = "<group>"; };
+		53953A571BA83601004E5DD5 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		539662B71B71C3CC002DA620 /* Mysteries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mysteries.swift; sourceTree = "<group>"; };
 		539662B91B71C7FE002DA620 /* Hex+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hex+UIColor.swift"; sourceTree = "<group>"; };
 		53990AD31B7C92A000E42331 /* Kefa-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kefa-Regular.otf"; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				535183E41B8CC9A800EBDF52 /* SettingsViewController.swift */,
 				53259E2E1B80E82D00175F0D /* SplashViewController.swift */,
 				530CD5C31B70D22500F13A79 /* ViewController.swift */,
+				53953A571BA83601004E5DD5 /* CreditsViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				5357B5F21B71BAB000F2BC5B /* AppUtils.swift in Sources */,
 				530CD5C41B70D22500F13A79 /* ViewController.swift in Sources */,
 				53990ADF1B7CFF4000E42331 /* Fade+UIVIew.swift in Sources */,
+				53953A581BA83601004E5DD5 /* CreditsViewController.swift in Sources */,
 				53990B061B7F4FAD00E42331 /* Audio.swift in Sources */,
 				53990ADB1B7CDA0700E42331 /* Rosary.swift in Sources */,
 				53D63B4B1B7C40840012E050 /* CircleProgress.swift in Sources */,

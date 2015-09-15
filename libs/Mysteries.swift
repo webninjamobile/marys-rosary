@@ -21,9 +21,12 @@ class Mysteries {
         "Saturday - Sorrowful"
     ]
     
+   
+    
     
     func getMystery(day:Int) -> String{
         return daysMysteries[day]
     }
+    
     
 }

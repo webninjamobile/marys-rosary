@@ -484,6 +484,7 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
         if(self.currentProgress == self.rosary.count - 1){ // last item
             //change play button
             self.btnPlay.setTitle("\u{f04b}",forState: UIControlState.Normal)
+            backgroundMusic.stop()
         }
         
     }
