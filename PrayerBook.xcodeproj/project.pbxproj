@@ -32,6 +32,7 @@
 		535A78EC1B8E15F300D35597 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A78E61B8E15F300D35597 /* UIViewController+TargetViewController.m */; };
 		535A78EE1B8EC01C00D35597 /* ModalPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535A78ED1B8EC01C00D35597 /* ModalPreviewViewController.swift */; };
 		53953A581BA83601004E5DD5 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53953A571BA83601004E5DD5 /* CreditsViewController.swift */; };
+		53953A591BA87B4F004E5DD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530CD5CA1B70D22500F13A79 /* LaunchScreen.xib */; };
 		539662B81B71C3CC002DA620 /* Mysteries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539662B71B71C3CC002DA620 /* Mysteries.swift */; };
 		539662BA1B71C7FE002DA620 /* Hex+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539662B91B71C7FE002DA620 /* Hex+UIColor.swift */; };
 		53990AD41B7C933B00E42331 /* Kefa-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53990AD31B7C92A000E42331 /* Kefa-Regular.otf */; };
@@ -64,6 +65,7 @@
 		53A7F6131BA80B9D000AC47A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 530CD5C51B70D22500F13A79 /* Main.storyboard */; };
 		53D440381B7B72B400C64184 /* PrayerSingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D440371B7B72B400C64184 /* PrayerSingleViewController.swift */; };
 		53D63B4B1B7C40840012E050 /* CircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D63B4A1B7C40840012E050 /* CircleProgress.swift */; };
+		53F0E32B1BA9187500EE181A /* iiSoundPlayerFadeOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0E32A1BA9187500EE181A /* iiSoundPlayerFadeOut.swift */; };
 		EB18B5E3A7A4F8D22B3434F1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4BDC23FCAF0E9F061CF8C0 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -148,6 +150,7 @@
 		53A7F6111BA80AFC000AC47A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53D440371B7B72B400C64184 /* PrayerSingleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayerSingleViewController.swift; sourceTree = "<group>"; };
 		53D63B4A1B7C40840012E050 /* CircleProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgress.swift; sourceTree = "<group>"; };
+		53F0E32A1BA9187500EE181A /* iiSoundPlayerFadeOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iiSoundPlayerFadeOut.swift; sourceTree = "<group>"; };
 		5B4BDC23FCAF0E9F061CF8C0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA3B67C5773F712E7723755 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E8EE1A3F2B80E5FC17643D8C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +265,7 @@
 				53990ADA1B7CDA0700E42331 /* Rosary.swift */,
 				53990AD81B7CA5C100E42331 /* SwiftyJSON.swift */,
 				5357B5F31B71C25500F2BC5B /* WeekDate+NSDate.swift */,
+				53F0E32A1BA9187500EE181A /* iiSoundPlayerFadeOut.swift */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -453,6 +457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53953A591BA87B4F004E5DD5 /* LaunchScreen.xib in Resources */,
 				53A7F6131BA80B9D000AC47A /* Main.storyboard in Resources */,
 				53990AF81B7E08E300E42331 /* creed.mp3 in Resources */,
 				53990ADD1B7CEB8500E42331 /* mysteries.json in Resources */,
@@ -577,6 +582,7 @@
 				53D63B4B1B7C40840012E050 /* CircleProgress.swift in Sources */,
 				533EAE661B71EBA900DBB188 /* CustomCell.swift in Sources */,
 				532BA9AB1B8EF83D00B032E7 /* Custom+UIButton.swift in Sources */,
+				53F0E32B1BA9187500EE181A /* iiSoundPlayerFadeOut.swift in Sources */,
 				535183EA1B8CD56E00EBDF52 /* settingsCell.swift in Sources */,
 				535A78E91B8E15F300D35597 /* MZFormSheetPresentationControllerAnimator.m in Sources */,
 				535A78EA1B8E15F300D35597 /* MZFormSheetPresentationControllerSegue.m in Sources */,

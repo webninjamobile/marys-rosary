@@ -60,7 +60,7 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
         
         let rosary = Rosary();
         self.rosary = rosary.prayRosary(self.mysteryIndex);
-        
+
 //        prepare rosary audio
         checkMp3(rosary)
         
@@ -323,7 +323,7 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
     func showHideBeadProgress(currentBead : Int){
 
         for i in 0..<currentBead {
-            println(i)
+            //println(i)
             beadsArray[i].showProgressView()
         }
         
@@ -484,8 +484,14 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
         if(self.currentProgress == self.rosary.count - 1){ // last item
             //change play button
             self.btnPlay.setTitle("\u{f04b}",forState: UIControlState.Normal)
-            backgroundMusic.stop()
+            let fader = iiFaderForAvAudioPlayer(player: backgroundMusic)
+            fader.volumeAlterationsPerSecond = 10
+            fader.fadeOut(duration: 7, velocity: 1)
+           // backgroundMusic.fadeOut()
         }
+
+
+        
         
     }
     

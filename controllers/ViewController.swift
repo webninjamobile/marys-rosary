@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource{
     @IBOutlet weak var tableView: UITableView!
     var currentIndex : Int = 0;
     
-    var mysteries : [(String,String,String,String)] = []
+    var mysteries : [(String,String,String,String,Int)] = []
      var mysteryIndex = [2,0,1,2,3,0,1]
     
 
@@ -51,10 +51,10 @@ class ViewController: UIViewController, UITableViewDataSource{
     func updateRow(){
         let dat = NSDate().toWeekDay();
         let mysteries = [
-            ("Joyful Mysteries","Mondays, Saturdays, Sundays of Advent, and Sundays from Epiphany until Lent","joyful","#8f0f0f"),
-            ("Sorrowful Mysteries","Tuesdays, Fridays, and daily from Ash Wednesday until Easter Sunday","sorrowful","#0f0f12"),
-            ("Glorious Mysteries","Every Wednesdays, and Sundays","glorious","#cc6a0b"),
-            ("Luminous Mysteries","Every Thursday","luminous","#6f6e41"),
+            ("Joyful Mysteries","Mondays, Saturdays, Sundays of Advent, and Sundays from Epiphany until Lent","joyful","#8f0f0f",0),
+            ("Sorrowful Mysteries","Tuesdays, Fridays, and daily from Ash Wednesday until Easter Sunday","sorrowful","#0f0f12",1),
+            ("Glorious Mysteries","Every Wednesdays, and Sundays","glorious","#cc6a0b",2),
+            ("Luminous Mysteries","Every Thursday","luminous","#6f6e41",3),
         ]
         self.mysteries = mysteries
         self.mysteries.removeAtIndex(mysteryIndex[dat])
@@ -100,7 +100,7 @@ class ViewController: UIViewController, UITableViewDataSource{
         let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as! CustomCell
 
 
-        let (title,note,key,color) = mysteries[indexPath.row];
+        let (title,note,key,color,index) = mysteries[indexPath.row];
         cell.mainLabel.text = title;
         cell.noteLabel.text = note;
         cell.coverImage.image = UIImage(named:key)
@@ -121,10 +121,10 @@ class ViewController: UIViewController, UITableViewDataSource{
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "sgPrayerView"){
             let viewController:PrayerSingleViewController = segue.destinationViewController as! PrayerSingleViewController
-            let (title,note,key,color) = mysteries[self.currentIndex];
+            let (title,note,key,color,index) = mysteries[self.currentIndex];
             
             viewController.myTitle = title;
-            viewController.mysteryIndex = self.currentIndex;
+            viewController.mysteryIndex = index;
         }
     }
    
