@@ -1,3 +1,5 @@
+## for Swift 1.x and Xcode 6.X
+
 # Mary's Rosary
 
 **[Download from the AppStore](https://itunes.apple.com/us/app/marys-rosary/id1034355078?ls=1&mt=8)**
