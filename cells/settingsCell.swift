@@ -24,7 +24,7 @@ class settingsCell: UITableViewCell {
         self.value.text = Int(sender.value).description + " second" + s
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
     }

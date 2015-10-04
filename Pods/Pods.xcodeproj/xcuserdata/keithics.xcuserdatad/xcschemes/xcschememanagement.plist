@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-JGMethodSwizzler.xcscheme</key>
+		<key>JGMethodSwizzler.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-MZAppearance.xcscheme</key>
+		<key>MZAppearance.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1E2858F1E68CCA5A94A41E95</key>
+		<key>01B8DA85DFDCE6DB5A42EAE56954EE03</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>71A7482BDEDB1E33AE3CA678</key>
+		<key>372A40DEBCCD0E8B9CA3C125F89D17DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B10251ECE6AB37D942750F46</key>
+		<key>3F73E3AD58088C203B6745A4017BF526</key>
 		<dict>
 			<key>primary</key>
 			<true/>

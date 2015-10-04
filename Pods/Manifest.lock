@@ -1,5 +1,5 @@
 PODS:
-  - Crashlytics (3.1.1)
+  - Crashlytics (3.3.4)
   - Fabric (1.4.0):
     - Fabric/Base (= 1.4.0)
   - Fabric/Base (1.4.0)
@@ -13,9 +13,9 @@ DEPENDENCIES:
   - MZAppearance
 
 SPEC CHECKSUMS:
-  Crashlytics: 39ab395565bc03c29cdecd2b9d103ebf30930c10
+  Crashlytics: 41c082440d2e14da444186fff65e79c0b4b35d4c
   Fabric: 6d1d1c1eaf7ebc76fc3307e2c0259456411baf26
   JGMethodSwizzler: e0ea5c1c6c55304ec4ef3f54e441400c6735c899
   MZAppearance: 6e9dc64e42074c0a19812a327f590746c3283bab
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.38.2

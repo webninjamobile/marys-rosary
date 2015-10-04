@@ -77,7 +77,7 @@ class Rosary {
     func hailMaries(max : Int) -> [(String,String,String,Int)]{
         var hm : [(String,String,String,Int)] = [];
         for i in 1...max {
-            hm.append( String(i) + ". " + getPrayer(2).0,getPrayer(2).1,getPrayer(2).2,getPrayer(2).3)
+            hm.append( String(i) + ". " + getPrayer(2).0 as String,getPrayer(2).1 as String,getPrayer(2).2 as String,getPrayer(2).3)
         }
         
         return hm

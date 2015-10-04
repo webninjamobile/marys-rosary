@@ -17,7 +17,7 @@ class CircleProgress: UIView {
     var stroke = "#dce324"
     var lineWidth : CGFloat = CGFloat(4.0)
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         progressLabel = UILabel()
         super.init(coder: aDecoder)
         createProgressLayer()
@@ -35,7 +35,7 @@ class CircleProgress: UIView {
         progressLabel = UILabel(frame: CGRectMake(0.0, 0.0, CGRectGetWidth(frame), 60.0))
         progressLabel.textColor = .whiteColor()
         progressLabel.textAlignment = .Center        
-        progressLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        progressLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(progressLabel)
         
         addConstraint(NSLayoutConstraint(item: self, attribute: .CenterX, relatedBy: .Equal, toItem: progressLabel, attribute: .CenterX, multiplier: 1.0, constant: 0.0))
@@ -106,7 +106,7 @@ class CircleProgress: UIView {
         progressLayer.addAnimation(animation, forKey: "strokeEnd")
     }
     
-    override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
+    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
         //progressLabel.text = "Done"
     }
 }

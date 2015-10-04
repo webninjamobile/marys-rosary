@@ -44,8 +44,8 @@ class ModalPreviewViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
          super.viewDidAppear(animated)
-        var path = NSBundle.mainBundle().pathForResource(currentMp3, ofType: "mp3")
-        mp3 = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!), error: nil)
+        let path = NSBundle.mainBundle().pathForResource(currentMp3, ofType: "mp3")
+        mp3 = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!))
         mp3.prepareToPlay()
         mp3.play()
 

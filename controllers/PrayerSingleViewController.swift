@@ -73,11 +73,11 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
         
         self.title = self.myTitle;
         
-        var x = 10;
+        _ = 10;
         
         //create beads
         for i in 0...6 {
-            var newX = CGFloat((i * Int(fullWidth)) + pad);
+            let newX = CGFloat((i * Int(fullWidth)) + pad);
             let beadsProgress = CircleProgress(frame: CGRectMake(newX, 80, dimen, dimen))
             let (title,size) = beads[i]
             beadsProgress.tag = i
@@ -124,8 +124,8 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
         checkControls()
         
         // swipes
-        var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
-        var rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
         
         leftSwipe.direction = .Left
         rightSwipe.direction = .Right
@@ -133,8 +133,9 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
         view.addGestureRecognizer(leftSwipe)
         view.addGestureRecognizer(rightSwipe)
         
-        var pathBackground = NSBundle.mainBundle().pathForResource("avemaria", ofType: "mp3")
-        backgroundMusic = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: pathBackground!), error: nil)
+        let pathBackground = NSBundle.mainBundle().pathForResource("avemaria", ofType: "mp3")
+        
+        backgroundMusic = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: pathBackground!))
         backgroundMusic.volume = 0.1
         backgroundMusic.numberOfLoops = -1;
         backgroundMusic.prepareToPlay()
@@ -178,7 +179,7 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
         
         showHideBeadProgress(self.currentBead)
         
-        var mulcrement : CGFloat = CGFloat((100/self.beadsNumPrayers[self.currentBead]))/100
+        let mulcrement : CGFloat = CGFloat((100/self.beadsNumPrayers[self.currentBead]))/100
         
         let currentProgress = currentIndex < self.beadsNumPrayers[0] ? currentIndex : (currentIndex - self.beadsIndex[self.currentBead - 1])
         
@@ -209,7 +210,7 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
     
     @IBAction func onNext(sender: AnyObject) {
         self.autoPlay = false
-        nextPrayer(autoplay: false, willPause: true)
+        nextPrayer(false, willPause: true)
     }
     
     func nextPrayer(autoplay : Bool = false , willPause: Bool = false){
@@ -345,16 +346,15 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
     
     func playMp3(file : String, delay : Int) {
         if(delay == 0){
-            var path = NSBundle.mainBundle().pathForResource(file, ofType: "mp3")
-            mp3 = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: path!), error: nil)
+            mp3 = try! AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath:  NSBundle.mainBundle().pathForResource(file, ofType: "mp3")!))
         }else{
             //play processed audio instead
             let paths = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-            let documentsURL = paths[0] as! NSURL
+            let documentsURL = paths[0] 
 
-            var processedAudio = documentsURL.URLByAppendingPathComponent(file.m4a)
-            AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
-            mp3 = AVAudioPlayer(contentsOfURL: processedAudio, error: nil)
+            let processedAudio = documentsURL.URLByAppendingPathComponent(file.m4a)
+            try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            mp3 = try! AVAudioPlayer(contentsOfURL: processedAudio)
 
         }
         
@@ -398,7 +398,7 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
     func prepareAudio(rosary : Rosary){
         var status : [Bool] = []
         
-        for (index: String, subJson: JSON) in JSON(data:rosary.rosaryJson) {
+        for (_, subJson): (String, JSON) in JSON(data:rosary.rosaryJson) {
             if subJson["delay"] > 0 {
                 let isOkay = Audio().merge(subJson["mp3"].stringValue,silence: Double(subJson["delay"].intValue))
                 status.append(isOkay)
@@ -439,7 +439,7 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
             var audiofiles : [String] = [];
             
             //check if mp3 files exists, just in case :)
-            for (index: String, subJson: JSON) in JSON(data:rosary.rosaryJson) {
+            for (_, subJson): (String, JSON) in JSON(data:rosary.rosaryJson) {
                 if subJson["delay"] > 0 {
                     audiofiles.append(subJson["mp3"].stringValue)
                 }
@@ -448,12 +448,12 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
             for index in rosary.mysteries{
                 audiofiles.append(index + "mystery")
             }
-            let docPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
+            let docPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] 
             
-            var checkValidation = NSFileManager.defaultManager()
+            let checkValidation = NSFileManager.defaultManager()
             
             for eachAudio in audiofiles{
-                let exportPath = docPath.stringByAppendingPathComponent(eachAudio.m4a)
+                let exportPath = (docPath as NSString).stringByAppendingPathComponent(eachAudio.m4a)
                 if (!checkValidation.fileExistsAtPath(exportPath)) {
                     notifyUserError()
                     break
@@ -464,9 +464,9 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
     }
     
     func notifyUserError(){
-        var refreshAlert = UIAlertController(title: "Error", message: "Error saving audio files. ", preferredStyle: UIAlertControllerStyle.Alert)
+        let refreshAlert = UIAlertController(title: "Error", message: "Error saving audio files. ", preferredStyle: UIAlertControllerStyle.Alert)
         
-        refreshAlert.addAction(UIAlertAction(title: "Retry", style: .Default, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: "Retry", style: .Default, handler: { (action: UIAlertAction) in
             NSUserDefaults.standardUserDefaults().setBool(false, forKey: "hasProcessed")
             self.back()
         }))
@@ -475,10 +475,10 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
     }
     
     // delegates
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully flag: Bool) {
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
         isDonePlaying = true
         if(self.autoPlay && self.currentProgress < self.rosary.count - 1){
-            self.nextPrayer(autoplay: true)
+            self.nextPrayer(true)
         }
         
         if(self.currentProgress == self.rosary.count - 1){ // last item
@@ -486,7 +486,7 @@ class PrayerSingleViewController: UIViewController , AVAudioPlayerDelegate{
             self.btnPlay.setTitle("\u{f04b}",forState: UIControlState.Normal)
             let fader = iiFaderForAvAudioPlayer(player: backgroundMusic)
             fader.volumeAlterationsPerSecond = 10
-            fader.fadeOut(duration: 7, velocity: 1)
+            fader.fadeOut(7, velocity: 1)
            // backgroundMusic.fadeOut()
         }
 

@@ -29,15 +29,23 @@ class ViewController: UIViewController, UITableViewDataSource{
         todaysMystery.text = Mysteries().getMystery(dat) + " Mysteries";
         
         
-        let logButton : UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Action, target: self, action: "gotoSettings:")
+        let logButton : UIBarButtonItem = UIBarButtonItem(title: "\u{f013}", style: UIBarButtonItemStyle.Plain, target: self, action: "gotoSettings:")
+        
+        logButton.setTitleTextAttributes([
+            NSFontAttributeName : UIFont(name: "FontAwesome", size: 22)!,
+            NSForegroundColorAttributeName : UIColor.whiteColor()],
+            forState: UIControlState.Normal)
 
         self.navigationItem.rightBarButtonItem = logButton
         
         let leftButton : UIBarButtonItem = UIBarButtonItem(title: "\u{f004}", style: UIBarButtonItemStyle.Plain, target: self, action: "gotoCredits:")
+        
         leftButton.setTitleTextAttributes([
             NSFontAttributeName : UIFont(name: "FontAwesome", size: 22)!,
             NSForegroundColorAttributeName : UIColor.whiteColor()],
             forState: UIControlState.Normal)
+        
+        
         self.navigationItem.leftBarButtonItem = leftButton
         
         //self.parentViewController.view.backgroundColor = UIColor.redColor();
@@ -100,7 +108,7 @@ class ViewController: UIViewController, UITableViewDataSource{
         let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as! CustomCell
 
 
-        let (title,note,key,color,index) = mysteries[indexPath.row];
+        let (title,note,key,color,_) = mysteries[indexPath.row];
         cell.mainLabel.text = title;
         cell.noteLabel.text = note;
         cell.coverImage.image = UIImage(named:key)

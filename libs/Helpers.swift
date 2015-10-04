@@ -13,7 +13,7 @@ class Helpers{
     
     func uniq<S: SequenceType, E: Hashable where E==S.Generator.Element>(source: S) -> [E] {
         var seen: [E:Bool] = [:]
-        return filter(source) { seen.updateValue(true, forKey: $0) == nil }
+        return source.filter { seen.updateValue(true, forKey: $0) == nil }
     }
     
 }
@@ -35,7 +35,7 @@ func delay(delay:Double, closure:()->()) {
 }
 
 func showLoading(view : UIViewController) -> UIViewController{
-    let viewController = view.storyboard!.instantiateViewControllerWithIdentifier("loading") as! UIViewController
+    let viewController = view.storyboard!.instantiateViewControllerWithIdentifier("loading") 
     let formSheetController = MZFormSheetPresentationController(contentViewController: viewController)
 
     formSheetController.shouldCenterVertically = true

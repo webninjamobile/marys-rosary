@@ -13,10 +13,10 @@ extension UIColor {
         var red:   CGFloat = 0.0
         var green: CGFloat = 0.0
         var blue:  CGFloat = 0.0
-        var alpha: CGFloat = 1.0
+        let alpha: CGFloat = 1.0
         
         if rgba.hasPrefix("#") {
-            let index   = advance(rgba.startIndex, 1)
+            let index   = rgba.startIndex.advancedBy(1)
             let hex     = rgba.substringFromIndex(index)
             let scanner = NSScanner(string: hex)
             var hexValue: CUnsignedLongLong = 0
@@ -28,10 +28,10 @@ extension UIColor {
                     blue  = CGFloat(hexValue & 0x0000FF)           / 255.0
                
             } else {
-                println("Scan hex error")
+                print("Scan hex error")
             }
         } else {
-            print("Invalid RGB string, missing '#' as prefix")
+            print("Invalid RGB string, missing '#' as prefix", terminator: "")
         }
         self.init(red:red, green:green, blue:blue, alpha:alpha)
     }

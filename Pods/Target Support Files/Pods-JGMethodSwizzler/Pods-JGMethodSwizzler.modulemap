@@ -1,6 +1,0 @@
-framework module JGMethodSwizzler {
-  umbrella header "Pods-JGMethodSwizzler-umbrella.h"
-
-  export *
-  module * { export * }
-}

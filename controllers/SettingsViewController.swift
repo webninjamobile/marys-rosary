@@ -89,13 +89,13 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
     }
     
     @IBAction func btnReset(sender: AnyObject) {
-        var refreshAlert = UIAlertController(title: "Alert", message: "Reset to default settings?", preferredStyle: UIAlertControllerStyle.Alert)
+        let refreshAlert = UIAlertController(title: "Alert", message: "Reset to default settings?", preferredStyle: UIAlertControllerStyle.Alert)
         
-        refreshAlert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action: UIAlertAction) in
             self.save(true)
 
         }))
-        refreshAlert.addAction(UIAlertAction(title: "No", style: .Default, handler: { (action: UIAlertAction!) in
+        refreshAlert.addAction(UIAlertAction(title: "No", style: .Default, handler: { (action: UIAlertAction) in
             refreshAlert.dismissViewControllerAnimated(true, completion: nil)
         }))
 
@@ -110,10 +110,10 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
     }
     
     func playMp3(sender:CustomButtonWithValue){
-        let (title,file,delay) = settings[sender.tag];
+        let (title,file,_) = settings[sender.tag];
         let currentCell = table.cellForRowAtIndexPath(sender.currentCell) as! settingsCell
 
-        let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("modalSettings") as! UIViewController
+        let viewController = self.storyboard!.instantiateViewControllerWithIdentifier("modalSettings") 
         let formSheetController = MZFormSheetPresentationController(contentViewController: viewController)
         let presentedViewController = viewController as! ModalPreviewViewController
         presentedViewController.currentPrayer = title
@@ -157,12 +157,12 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
         
         var newDelays : [Int] = []
         
-        for section in 0..<table.numberOfSections() {
+        for section in 0..<table.numberOfSections {
             
             for row in 0..<table.numberOfRowsInSection(section) {
                 
                 let indexPath = NSIndexPath(forRow: row, inSection: section)
-                var cell = table.cellForRowAtIndexPath(indexPath) as! settingsCell
+                let cell = table.cellForRowAtIndexPath(indexPath) as! settingsCell
                 
 //                println("processing ... " + cell.btnPlay.currentMp3 + " with delay of \(cell.stepper.value)")
                 newDelays.append(Int(cell.stepper.value))
@@ -197,7 +197,7 @@ class SettingsViewController: UIViewController, UITableViewDataSource {
     }
     
     func notifyUserError(){
-        var refreshAlert = UIAlertController(title: "Error", message: "Error saving audio files. ", preferredStyle: UIAlertControllerStyle.Alert)
+        let refreshAlert = UIAlertController(title: "Error", message: "Error saving audio files. ", preferredStyle: UIAlertControllerStyle.Alert)
         
         
         self.presentViewController(refreshAlert, animated: true, completion: nil)
