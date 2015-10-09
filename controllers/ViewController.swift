@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource{
     var currentIndex : Int = 0;
     
     var mysteries : [(String,String,String,String,Int)] = []
-     var mysteryIndex = [2,0,1,2,3,0,1]
+     var mysteryIndex = [2,0,1,2,3,1,0]
     
 
     

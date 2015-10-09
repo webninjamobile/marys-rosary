@@ -17,8 +17,8 @@ class Mysteries {
         "Tuesday - Sorrowful",
         "Wednesday - Glorious",
         "Thursday - Luminous",
-        "Friday - Joyful",
-        "Saturday - Sorrowful"
+        "Friday - Sorrowful",
+        "Saturday - Joyful"
     ]
     
    
