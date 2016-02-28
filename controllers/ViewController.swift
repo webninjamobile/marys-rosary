@@ -64,9 +64,12 @@ class ViewController: UIViewController, UITableViewDataSource{
             ("Glorious Mysteries","Every Wednesdays, and Sundays","glorious","#cc6a0b",2),
             ("Luminous Mysteries","Every Thursday","luminous","#6f6e41",3),
         ]
+        
+        let loreto = ("Litany of the Blessed Virgin Mary","Often prayed privately, especially after the rosary","loreto","#000000",4)
         self.mysteries = mysteries
         self.mysteries.removeAtIndex(mysteryIndex[dat])
         self.mysteries.insert(mysteries[mysteryIndex[dat]],atIndex:0)
+        self.mysteries.insert(loreto,atIndex:4)
     }
     
     func updateMystery(){
@@ -123,17 +126,29 @@ class ViewController: UIViewController, UITableViewDataSource{
     
     func selectCell(sender:UIButton) {
         self.currentIndex = sender.tag
-        self.performSegueWithIdentifier("sgPrayerView", sender: self)
+        
+        if self.currentIndex == 4 {
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewControllerWithIdentifier("LoretoViewController") as! LoretoViewController
+            self.navigationController?.pushViewController(controller, animated: true)
+            
+            
+        }else{
+            self.performSegueWithIdentifier("sgPrayerView", sender: self)
+        }
+
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "sgPrayerView"){
-            let viewController:PrayerSingleViewController = segue.destinationViewController as! PrayerSingleViewController
-            let (title,note,key,color,index) = mysteries[self.currentIndex];
-            
-            viewController.myTitle = title;
-            viewController.mysteryIndex = index;
+                let viewController:PrayerSingleViewController = segue.destinationViewController as! PrayerSingleViewController
+                let (title,_,_,_,index) = mysteries[self.currentIndex];
+                
+                viewController.myTitle = title;
+                viewController.mysteryIndex = index;
         }
+        
     }
    
     

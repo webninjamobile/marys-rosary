@@ -15,6 +15,7 @@
 		533EAE641B71D72B00DBB188 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 533EAE631B71D72B00DBB188 /* CustomCell.xib */; };
 		533EAE661B71EBA900DBB188 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EAE651B71EBA900DBB188 /* CustomCell.swift */; };
 		533EAE691B7249F200DBB188 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 533EAE681B7249D700DBB188 /* FontAwesome.otf */; };
+		534D694C1C70DFF000913446 /* LoretoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534D694B1C70DFF000913446 /* LoretoViewController.swift */; };
 		535183E31B8CBBBB00EBDF52 /* avemaria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 535183E21B8CBBBB00EBDF52 /* avemaria.mp3 */; };
 		535183E51B8CC9A800EBDF52 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535183E41B8CC9A800EBDF52 /* SettingsViewController.swift */; };
 		535183EA1B8CD56E00EBDF52 /* settingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535183E91B8CD56E00EBDF52 /* settingsCell.swift */; };
@@ -31,6 +32,7 @@
 		535A78EB1B8E15F300D35597 /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A78E41B8E15F300D35597 /* MZTransition.m */; };
 		535A78EC1B8E15F300D35597 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535A78E61B8E15F300D35597 /* UIViewController+TargetViewController.m */; };
 		535A78EE1B8EC01C00D35597 /* ModalPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535A78ED1B8EC01C00D35597 /* ModalPreviewViewController.swift */; };
+		536D00C71C8345B000946416 /* loreto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 536D00C61C8345B000946416 /* loreto.mp3 */; };
 		53953A581BA83601004E5DD5 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53953A571BA83601004E5DD5 /* CreditsViewController.swift */; };
 		53953A591BA87B4F004E5DD5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 530CD5CA1B70D22500F13A79 /* LaunchScreen.xib */; };
 		539662B81B71C3CC002DA620 /* Mysteries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539662B71B71C3CC002DA620 /* Mysteries.swift */; };
@@ -66,7 +68,7 @@
 		53D440381B7B72B400C64184 /* PrayerSingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D440371B7B72B400C64184 /* PrayerSingleViewController.swift */; };
 		53D63B4B1B7C40840012E050 /* CircleProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D63B4A1B7C40840012E050 /* CircleProgress.swift */; };
 		53F0E32B1BA9187500EE181A /* iiSoundPlayerFadeOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F0E32A1BA9187500EE181A /* iiSoundPlayerFadeOut.swift */; };
-		EB18B5E3A7A4F8D22B3434F1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4BDC23FCAF0E9F061CF8C0 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EB18B5E3A7A4F8D22B3434F1 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4BDC23FCAF0E9F061CF8C0 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,7 @@
 		533EAE631B71D72B00DBB188 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		533EAE651B71EBA900DBB188 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		533EAE681B7249D700DBB188 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		534D694B1C70DFF000913446 /* LoretoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoretoViewController.swift; sourceTree = "<group>"; };
 		535183E21B8CBBBB00EBDF52 /* avemaria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = avemaria.mp3; sourceTree = "<group>"; };
 		535183E41B8CC9A800EBDF52 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		535183E91B8CD56E00EBDF52 /* settingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsCell.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 		535A78E51B8E15F300D35597 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
 		535A78E61B8E15F300D35597 /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
 		535A78ED1B8EC01C00D35597 /* ModalPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPreviewViewController.swift; sourceTree = "<group>"; };
+		536D00C61C8345B000946416 /* loreto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = loreto.mp3; sourceTree = "<group>"; };
 		53953A571BA83601004E5DD5 /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		539662B71B71C3CC002DA620 /* Mysteries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mysteries.swift; sourceTree = "<group>"; };
 		539662B91B71C7FE002DA620 /* Hex+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hex+UIColor.swift"; sourceTree = "<group>"; };
@@ -317,6 +321,7 @@
 				53990AE31B7E08E300E42331 /* 1stmystery.mp3 */,
 				53990AE41B7E08E300E42331 /* 2ndmystery.mp3 */,
 				53990AE51B7E08E300E42331 /* 3rdmystery.mp3 */,
+				536D00C61C8345B000946416 /* loreto.mp3 */,
 				53990AE61B7E08E300E42331 /* 4thmystery.mp3 */,
 				53990AE71B7E08E300E42331 /* 5thmystery.mp3 */,
 				535183E21B8CBBBB00EBDF52 /* avemaria.mp3 */,
@@ -346,6 +351,7 @@
 				53259E2E1B80E82D00175F0D /* SplashViewController.swift */,
 				530CD5C31B70D22500F13A79 /* ViewController.swift */,
 				53953A571BA83601004E5DD5 /* CreditsViewController.swift */,
+				534D694B1C70DFF000913446 /* LoretoViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -483,6 +489,7 @@
 				53990AD71B7C9E4C00E42331 /* rosary.json in Resources */,
 				5357B5EE1B7110AB00F2BC5B /* KaushanScript-Regular.ttf in Resources */,
 				53990AF91B7E08E300E42331 /* ending.mp3 in Resources */,
+				536D00C71C8345B000946416 /* loreto.mp3 in Resources */,
 				53990AFB1B7E08E300E42331 /* glorybe.mp3 in Resources */,
 				53990B001B7E08E300E42331 /* popeintro.mp3 in Resources */,
 				53990AF71B7E08E300E42331 /* 5thmystery.mp3 in Resources */,
@@ -590,6 +597,7 @@
 				535A78EA1B8E15F300D35597 /* MZFormSheetPresentationControllerSegue.m in Sources */,
 				535A78E71B8E15F300D35597 /* MZBlurEffectAdapter.m in Sources */,
 				535A78EB1B8E15F300D35597 /* MZTransition.m in Sources */,
+				534D694C1C70DFF000913446 /* LoretoViewController.swift in Sources */,
 				5357B5E91B71053800F2BC5B /* NavViewController.swift in Sources */,
 				535A78E81B8E15F300D35597 /* MZFormSheetPresentationController.m in Sources */,
 				53990B0A1B7F88EE00E42331 /* FileExtenstions+String.swift in Sources */,

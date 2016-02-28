@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ytp-t7-D05">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ytp-t7-D05">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -13,8 +13,11 @@
             <string>FontAwesome</string>
             <string>FontAwesome</string>
             <string>FontAwesome</string>
+            <string>FontAwesome</string>
         </mutableArray>
         <mutableArray key="Kefa-Regular.otf">
+            <string>KefaIIPro-Regular</string>
+            <string>KefaIIPro-Regular</string>
             <string>KefaIIPro-Regular</string>
             <string>KefaIIPro-Regular</string>
             <string>KefaIIPro-Regular</string>
@@ -160,7 +163,7 @@ Our Blessed Mother Mary
 and to
 Our Saviour Jesus Christ</string>
                                 <fontDescription key="fontDescription" name="KefaIIPro-Regular" family="Kefa II Pro" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -397,12 +400,12 @@ Our Saviour Jesus Christ</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="O6O-Ux-usP" firstAttribute="leading" secondItem="nY8-YG-F3k" secondAttribute="leadingMargin" constant="-20" id="45c-29-A1U"/>
-                            <constraint firstItem="8el-3l-T26" firstAttribute="top" secondItem="HAy-JE-tmf" secondAttribute="bottom" constant="60" id="TV5-jb-VAJ"/>
+                            <constraint firstItem="HAy-JE-tmf" firstAttribute="top" secondItem="0kV-Qp-SYt" secondAttribute="bottom" constant="20" id="Iyg-8n-yqO"/>
+                            <constraint firstItem="8el-3l-T26" firstAttribute="top" secondItem="HAy-JE-tmf" secondAttribute="bottom" constant="60" id="Y1V-jD-HgU"/>
                             <constraint firstItem="HAy-JE-tmf" firstAttribute="leading" secondItem="nY8-YG-F3k" secondAttribute="leadingMargin" constant="-20" id="ZKy-Ff-2VQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HAy-JE-tmf" secondAttribute="trailing" constant="-20" id="dxr-sg-xDX"/>
-                            <constraint firstItem="HAy-JE-tmf" firstAttribute="top" secondItem="0kV-Qp-SYt" secondAttribute="bottom" constant="20" id="lib-lO-0KC"/>
+                            <constraint firstItem="8el-3l-T26" firstAttribute="top" secondItem="O6O-Ux-usP" secondAttribute="bottom" id="iLk-xn-I5s"/>
                             <constraint firstAttribute="trailingMargin" secondItem="O6O-Ux-usP" secondAttribute="trailing" constant="-20" id="rBv-Tr-Ga6"/>
-                            <constraint firstItem="8el-3l-T26" firstAttribute="top" secondItem="O6O-Ux-usP" secondAttribute="bottom" id="v8g-Dk-kI2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -418,6 +421,172 @@ Our Saviour Jesus Christ</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5j-kF-mi0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1347" y="1192"/>
+        </scene>
+        <!--Litany of Loreto-->
+        <scene sceneID="1Iu-sE-7uK">
+            <objects>
+                <viewController storyboardIdentifier="LoretoViewController" title="Litany of Loreto" automaticallyAdjustsScrollViewInsets="NO" id="h7D-qb-BDX" customClass="LoretoViewController" customModule="PrayerBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ebm-Jz-io6"/>
+                        <viewControllerLayoutGuide type="bottom" id="KKd-fI-p5D"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="dAm-gY-pKu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlf-ZK-elD">
+                                <rect key="frame" x="20" y="116" width="560" height="2025"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <mutableString key="text">In the Name of the Father, and of The Son and of The Holy Spirit
+
+V. Lord, have mercy.
+R. Christ have mercy.
+V. Lord have mercy. Christ hear us.
+R. Christ graciously hear us.
+
+God the Father of heaven, 
+have mercy on us.
+God the Son, Redeemer of the world, 
+have mercy on us.
+God the Holy Spirit, 
+have mercy on us.
+Holy Trinity, one God, 
+have mercy on us.
+
+Holy Mary, 
+pray for us.
+Holy Mother of God, 
+pray for us.
+Holy Virgin of Virgins, [etc.]
+Mother of Christ,
+Mother of divine grace,
+Mother most pure,
+Mother most chaste,
+Mother inviolate,
+Mother undefiled,
+Mother most amiable,
+Mother most admirable,
+Mother of good Counsel,
+Mother of our Creator,
+Mother of our Savior,
+
+Virgin most prudent,
+Virgin most venerable,
+Virgin most renowned,
+Virgin most powerful,
+Virgin most merciful,
+Virgin most faithful,
+
+Mirror of justice,
+Seat of wisdom,
+Cause of our joy,
+Spiritual vessel,
+Vessel of honor,
+Singular vessel of devotion,
+Mystical rose,
+Tower of David,
+Tower of ivory,
+House of gold,
+Ark of the covenant,
+Gate of heaven,
+Morning star,
+Health of the sick,
+Refuge of sinners,
+Comforter of the afflicted,
+Help of Christians,
+
+Queen of Angels,
+Queen of Patriarchs,
+Queen of Prophets,
+Queen of Apostles,
+Queen of Martyrs,
+Queen of Confessors,
+Queen of Virgins,
+Queen of all Saints,
+Queen conceived without original sin,
+Queen assumed into heaven,
+Queen of the most holy Rosary,
+Queen of families,
+Queen of peace,
+
+V. Lamb of God, Who takest away the sins of the world,
+R. Spare us, O Lord.
+V. Lamb of God, Who takest away the sins of the world,
+R. Graciously hear us, O Lord.
+V. Lamb of God, Who takest away the sins of the world,
+Have mercy on us.
+
+V. Pray for us, O holy Mother of God.
+R. That we may be made worthy of the promises of Christ.
+
+Let us pray. 
+
+Grant, we beseech Thee, O Lord God, that we thy servants may enjoy perpetual health of mind and body, and by the glorious intercession of blessed Mary, ever Virgin, may we be freed from present sorrow, and rejoice in eternal happiness. Through Christ our Lord. R. Amen.
+
+
+
+
+</mutableString>
+                                <fontDescription key="fontDescription" name="KefaIIPro-Regular" family="Kefa II Pro" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOu-N4-oT6">
+                                <rect key="frame" x="0.0" y="539" width="608" height="61"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TND-9s-8Zf">
+                                        <rect key="frame" x="281" y="16" width="46" height="30"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="45"/>
+                                        <state key="normal" title="P">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPlay:" destination="h7D-qb-BDX" eventType="touchUpInside" id="7ea-zc-bfc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.20000000000000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="TND-9s-8Zf" secondAttribute="centerY" constant="-0.5" id="6EV-EQ-70u"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="61" id="EO7-hA-81W"/>
+                                    <constraint firstAttribute="centerX" secondItem="TND-9s-8Zf" secondAttribute="centerX" id="k4T-wx-X8K"/>
+                                    <constraint firstAttribute="height" constant="61" id="sEl-4Y-CU6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Litany of the Blessed Virgin Mary " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmq-rl-PWr">
+                                <rect key="frame" x="20" y="49" width="560" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="xp7-Z6-uUV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="KefaIIPro-Regular" family="Kefa II Pro" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KKd-fI-p5D" firstAttribute="top" secondItem="gOu-N4-oT6" secondAttribute="bottom" id="A3P-bQ-JCu"/>
+                            <constraint firstItem="Cmq-rl-PWr" firstAttribute="top" secondItem="Ebm-Jz-io6" secondAttribute="bottom" constant="29" id="BLl-Gi-i7t"/>
+                            <constraint firstItem="gOu-N4-oT6" firstAttribute="leading" secondItem="dAm-gY-pKu" secondAttribute="leadingMargin" constant="-20" id="KN5-ce-ZIc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gOu-N4-oT6" secondAttribute="trailing" constant="-28" id="MFU-si-jj6"/>
+                            <constraint firstItem="Jlf-ZK-elD" firstAttribute="leading" secondItem="dAm-gY-pKu" secondAttribute="leadingMargin" id="P28-FF-Gg7"/>
+                            <constraint firstItem="Jlf-ZK-elD" firstAttribute="trailing" secondItem="dAm-gY-pKu" secondAttribute="trailingMargin" id="edK-Yx-QCa"/>
+                            <constraint firstItem="Cmq-rl-PWr" firstAttribute="leading" secondItem="dAm-gY-pKu" secondAttribute="leadingMargin" id="egh-Wx-cHZ"/>
+                            <constraint firstItem="Jlf-ZK-elD" firstAttribute="top" secondItem="Cmq-rl-PWr" secondAttribute="bottom" constant="31" id="tHN-mV-itW"/>
+                            <constraint firstItem="gOu-N4-oT6" firstAttribute="top" secondItem="Jlf-ZK-elD" secondAttribute="bottom" constant="18" id="yw5-wk-Jra"/>
+                            <constraint firstItem="Cmq-rl-PWr" firstAttribute="trailing" secondItem="dAm-gY-pKu" secondAttribute="trailingMargin" id="zjr-9K-ays"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlay" destination="TND-9s-8Zf" id="kse-xx-Rde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXo-Sb-wZP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2153" y="1192"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="0xS-cD-4hZ">
